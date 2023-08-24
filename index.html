@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>VoteNation</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#video">Check out This Video!</a></li>
+      <li><a href="#">Support Our Cause</a></li>
+      <li><a href="#">Check Out Other Causes</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button> </li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+  <div class="active">
+    <div class="container">
+      <header class="header-container">
+        <div class="header-item">
+          <h1>VoteNation</h1>
+        </div>
+        <div class="header-item">
+          <img src="img/read_think_vote_1200x300.png" alt="Logo" id="header-img">
+        </div>
+        <button class="header-button">Vote Now Here!
+        </button>
+        <button class="header-button">Who is Eligible to Vote? </button>
+      </header>
+    </div>
+    <!--- Headings --->
+    <img />
+    <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
+
+  </div>
+  <!--- About --->
+  <div class="active">
+    <div id="home">
+      <h2>About My Topic</h2>
+    </div>
+    <p>The lack of voting, or low voter turnout, is a significant issue in the US. Despite efforts to increase voter
+      engagement, many Americans still choose not to vote. Some of the reasons for low voter turnout include:
+    </p>
+    <p>
+    <ul>
+      <li>Voter Disenfranchisement</li>
+      <li>Lack of Interest</li>
+      <li>Voter Registration</li>
+      <li>Timing of Elections,</li>
+      <li>Negative Campaigning</li>
+    </ul>
+    </p>
+  </div>
+  <!--- Data --->
+  <div class="revealable">
+    <h3>What's the source of the problem?</h3>
+    <p>
+      <img src="img/voting_img.jpg" alt="Go Vote!" width="500" height="300" />
+    </p>
+    <p>
+    <ul>
+      <li>Young people have the lowest turnout, though as the individual ages, turnout increases to a peak at the age of
+        50
+        and then falls again. Ever since 18-year-olds were given the right to vote in 1972, youth have been under
+        represented at the polls as of 2003.
+      </li>
+    </ul>
+    </p>
+  </div>
+  <!--- Impact --->
+  <div class="revealable">
+    <h3>Voter Turnout From 1978-2018</h3>
+
+    <p>
+      <img src="img/behind-2018-united-states-midterm-election-turnout-figure-1.avif"
+        alt="Infographic on Midterm ELections" width="500" height="300" />
+    </p>
+    <p>
+    <ul>
+      <li>
+        Voter turnout in the United States is much lower than in other countries, hovering around 60% in presidential
+        elections and 40% in midterm election years. Turnout soars to 90% in countries with mandatory voting and reaches
+        around 70% overall in developed countries.
+      </li>
+    </ul>
+    </p>
+  </div>
+
+  <div class="revealable">
+    <h3>Why?
+    </h3>
+    <div id="video">
+      <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t0e9guhV35o" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </p>
+    </div>
+    <div class="petition" id="petition">
+
+      <h2>Sign Our Petition 📢</h2>
+      <div class="petition-container">
+
+
+        <div class="petition-para">
+          People have died defending this right. Don’t take it for granted! Voting is more than just electing a
+          candidate,
+          it’s choosing the right policies and people who have your best interests in mind when making decisions that
+          will
+          affect our community, state and nation.
+          <!-- info goes here -->
+        </div>
+        <div class="signatures">
+          <h2>Signatures:</h2>
+          <p>🖊️ Martin Luther King, Jr. supports voting rights.</p>
+          <p>🖊️ Ida B. Wells supports voting rights.</p>
+          <p>🖊️ Fannie Lou Hamer supports voting rights.</p>
+          <div id="reqlist"></div>
+        </div>
+
+      </div>
+      <!--- Sign Petition Form --->
+      <form id="sign-petition" title="sign-petition">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" name="name-input" required>
+
+        <label for="hometown-input">Hometown:</label>
+        <input type="text" id="hometown-input" name="hometown-input" required>
+
+        <label for="email-input">Email:</label>
+        <input type="text" id="email-input" name="email-input" required>
+      </form>
+      <button id="sign-now-button">Sign Now</button>
+    </div>
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div id="modal-text-container">
+          <p id="thanks-modal-content">
+            Thank you!
+          </p>
+          <img src="img/download.jpg">
+          <!-- text here -->
+          <!-- button here (stretch feature) -->
+        </div>
+        <!-- image here-->
+      </div>
+
+    </div>
+    <!--- News --->
+    <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
+    <h2>Recent News</h2>
+
+    <a class="" href="">
+      <article>
+        <h3></h3>
+        <p></p>
+      </article>
+    </a>
+    <!-- Part 1: Navbar Starter Code -->
+
+
+
+    <!-- Part 2: Flexbox Layout Stater Code -->
+
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+
+    <h3>Your voice, your vote, your nation!</h3>
+    <div id="container">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
